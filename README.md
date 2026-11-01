@@ -1,47 +1,94 @@
-# Sistema-de-Analise-de-Notas
+#Sistema de Análise de Notas dos Alunos
 
-📊 Análise de Notas de Alunos
+1. O que o programa faz?
 
-🎯 Objetivo
+O programa permite cadastrar o nome e a nota de vários alunos, calculando automaticamente os resultados da turma.
 
-Programa desenvolvido em Python para cadastrar alunos e suas notas, calcular a média da turma e apresentar informações sobre os resultados.
+Após finalizar o cadastro, ele apresenta:
 
-⚙️ Funcionalidades
+Nome e nota de cada aluno.
 
-Cadastrar nomes e notas dos alunos.
+Quantidade total de alunos.
 
-Identificar alunos aprovados, em recuperação e reprovados.
+Média geral da turma.
 
-Calcular a média da turma.
+Maior e menor nota, identificando os respectivos alunos.
 
-Identificar a maior e a menor nota.
+Porcentagem e quantidade de alunos aprovados.
 
-Calcular a porcentagem de aprovação.
+Quantidade de alunos em recuperação.
 
-▶️ Como executar
+Quantidade de alunos reprovados.
 
-Com o Python instalado, execute no terminal:
+A classificação é feita de acordo com as seguintes regras:
 
-python analise_notas.py
+Aprovado: nota maior ou igual a 7.
 
-💻 Exemplo de entrada
+Recuperação: nota maior ou igual a 5 e menor que 7.
+
+Reprovado: nota menor que 5.
+
+2. Como executar o programa?
+
+É necessário ter o Python instalado no computador.
+
+Salve o código em um arquivo chamado notas_alunos.py.
+
+Abra o terminal na pasta onde o arquivo foi salvo.
+
+Execute o seguinte comando:
+
+python notas_alunos.py
+
+3. Exemplo de entrada e saída
+
+Entrada
 
 Digite o nome do aluno: Ana
 Digite a nota do aluno(0 a 10): 8
+Deseja continuar? (sim/nao): sim
+
+Digite o nome do aluno: Pedro
+Digite a nota do aluno(0 a 10): 6
+Deseja continuar? (sim/nao): sim
+
+Digite o nome do aluno: Maria
+Digite a nota do aluno(0 a 10): 4
 Deseja continuar? (sim/nao): nao
 
-📚 O que aprendi
+Saída
 
-Trabalhar com listas em Python.
+Aluno(a): Ana. Nota: 8.00
+Aluno(a): Pedro. Nota: 6.00
+Aluno(a): Maria. Nota: 4.00
 
-Utilizar estruturas de repetição (while e for).
+Total de alunos: 3
+A media da turma foi: 6.00
+A maior nota foi: 8.00, do aluno: Ana
+A menor nota foi: 4.00, do aluno: Maria
+A porcentagem de aprovados foi: 33.33%
+A quantidade de alunos aprovados foi: 1
+A quantidade de alunos em recuperação foi: 1
+A quantidade de alunos reprovados foi: 1
 
-Aplicar condições (if, elif e else).
+4. O que eu aprendi?
 
-Utilizar funções como sum(), max() e min().
+Com o desenvolvimento desse programa, pratiquei conceitos importantes da linguagem Python, principalmente:
 
-Calcular médias e porcentagens.
+Listas: para armazenar os nomes e as notas dos alunos.
 
-Exibir informações utilizando f-strings.
+Estrutura de repetição (while): para permitir o cadastro de vários alunos.
 
-Projeto desenvolvido durante meus estudos de Python.
+Estruturas condicionais (if, elif e else): para classificar os alunos de acordo com suas notas.
+
+Contadores: para acompanhar a quantidade de aprovados, alunos em recuperação e reprovados.
+
+Funções nativas: como len(), sum(), max() e min(), para realizar cálculos e obter informações.
+
+Índices e posições: para identificar qual aluno obteve a maior e a menor nota.
+
+Laço for e função zip(): para percorrer duas listas ao mesmo tempo e apresentar os resultados.
+
+Formatação de números: utilizando :.2f para exibir as notas e médias com duas casas decimais.
+
+O principal aprendizado foi conseguir juntar esses conceitos para desenvolver um programa que recebe informações, realiza cálculos e apresenta resultados de forma automática.
