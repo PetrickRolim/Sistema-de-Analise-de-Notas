@@ -1,4 +1,4 @@
-#Sistema de Análise de Notas dos Alunos
+Sistema de Análise de Notas dos Alunos
 
 1. O que o programa faz?
 
